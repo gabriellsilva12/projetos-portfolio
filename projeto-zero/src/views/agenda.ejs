@@ -1,0 +1,30 @@
+<div class="bodyAgenda">
+<%- include('./includes/header.ejs') %>
+<%- include('includes/nav')%>
+        
+        <h1>Contacts</h1>
+        <h2>Create or edit yours contacts down.</h2>
+        <div class="contactsTable">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gabriel</td>
+                        <td>Carvalho</td>
+                        <td>test@email.com</td>
+                        <td>40028922</td>
+                        <td><a href="#">editar</a></td>
+                        <td><a href="#">deletar</a></td>
+                    </tr>        
+                </tbody>
+            </table>
+        </div>
+    <%- include('./includes/footer.ejs') %>
+</div>

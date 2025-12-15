@@ -1,0 +1,51 @@
+<%- include('./includes/header.ejs') %>
+<%- include('includes/nav')%>
+
+    <div class="container-contacts">
+  
+        <div class="formulario" id="form-contacts">
+            <form action="/contact/register" method="post">
+                <h3>Create your contact</h3>
+                
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <%- include('includes/messages', { tipo: 'register'}) %>
+
+                <label for="">Name:</label>
+                <div class="form-group">
+                    <input 
+                        type="text"
+                        name="name" 
+                        id="name">
+                </div>
+                
+                <label for="">Surname:</label>
+                <div class="form-group">
+                    <input 
+                        type="text"
+                        name="surname" 
+                        id="surname">
+                </div>
+                
+                <label for="">Email:</label>
+                <div class="form-group">
+                    <input 
+                        type="email"
+                        name="email" 
+                        id="email" 
+                        placeholder="email@email.com">
+                </div>
+                
+                <label for="">Telephone:</label>
+                <div class="form-group">
+                    <input 
+                        type="tel" 
+                        name="telephone" 
+                        id="telephone">
+                </div>
+
+                <button type="submit">Create contact</button>
+            </form>
+        </div>
+
+    </div>
+<%- include('./includes/footer.ejs') %>

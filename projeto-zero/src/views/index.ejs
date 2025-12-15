@@ -1,0 +1,49 @@
+<%- include('./includes/header.ejs') %>
+<%- include('includes/nav')%>
+
+    <div class="container">
+  
+        <div class="formulario" id="form-1">
+            <form action="/login/register" method="post">
+                <h3>Create User</h3>
+
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <%- include('includes/messages', { tipo: 'register'}) %>
+                
+                <div class="form-group-login">
+                    <label for="">Username:</label>
+                    <p><input type="text" name="user" id=""></p><br>
+                </div>
+                <div class="form-group-login">
+                    <label for="">Email:</label>
+                    <p><input type="text" name="email" id=""></p><br>
+                </div>
+                <div class="form-group-login">
+                    <label for="">Password:</label>
+                    <p><input type="text" name="password" id=""></p>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+        <div class="formulario" id="form-2">
+            <form action="/login/login" method="post">
+                <h3>Login</h3>
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                
+                <%- include('includes/messages', { tipo: 'login' }) %>
+
+                <div class="form-group-login">
+                    <label for="">Email:</label>
+                    <p><input type="text" name="email" id=""></p><br>
+                </div>
+                <div class="form-group-login">
+                    <label for="">Password:</label>
+                    <p><input type="password" name="password" id=""></p>
+                </div>
+                <button type="submit">enviar</button>
+            </form>
+        </div>
+
+    </div>
+<%- include('./includes/footer.ejs') %>

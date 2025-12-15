@@ -1,0 +1,21 @@
+<% if (locals[tipo + 'Error'] && locals[tipo + 'Error'].length > 0) { %>
+    <div class="errors">
+        <% locals[tipo + 'Error'].forEach( err=> { %>
+            <p>
+                <%= err %>
+            </p> <br>
+        <% }); %>
+    </div>
+<% }; %>
+
+
+<% if(locals[tipo + 'Success'] && locals[tipo + 'Success'].length > 0) { %>
+    <div style="color: rgba(95, 255, 47, 0.76); font-size: 16px; padding-bottom: 0px; ">
+        <p>
+            <%= locals[tipo + 'Success'] %> 
+        </p><br>
+    </div>
+<% }; %>
+
+
+

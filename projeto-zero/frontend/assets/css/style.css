@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    background-color: #000000;
+    border-bottom: 9px solid #ffffffec;
+    border-left: 9px solid #ff000055;
+    box-shadow: 5px 1px 28px 16px #be000090;
+
+    & a {
+        color: #ff000084;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+.left {
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.right a {
+    margin-left: 20px;
+    color: #8c8273;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 101px;
+    gap: 0px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff000055;
+    border: 3px solid #8c8273;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    margin: auto;
+    box-shadow: 23px 19px 74px -18px #8c8273;
+
+    & label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffcbcb;
+    }
+
+    & input {
+        height: 20px;
+        margin-top: 5px;
+        padding-left: 5px;
+        border: 2px solid black;
+    }
+
+    & input:focus {
+        outline: 2px solid #8c8273;
+        border: none;
+    }
+
+    & h3 {
+        color: white;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    & button {
+        cursor: pointer;
+        margin-top: 20px;
+        width: 164px;
+        height: 25px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    & button:hover {
+        color: #fff;
+        background-color: #8c8273;
+        border: 2px solid black;
+    }
+
+    & button:active {
+        background-color: green;
+    }
+}
+
+.errors {
+    color: red;
+    font-size: 16px;
+    padding-bottom: 0px;
+}
+
+#h1-post {
+    margin-top: 70px;
+    color: rgb(21, 255, 0);
+    text-align: center;
+}
+
+.bodyAgenda {
+    height: 100vh;
+    text-align: center;
+    background-color: white;
+    & h1 {
+        margin: 32px 0px 5px 0px;
+    }
+
+    & h2 {
+        margin-bottom: 20px;
+    }
+}
+
+
+.contactsTable {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 3px black;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px 20px 20px 20px;
+    
+    & th {
+        padding-top: 5px;
+        width: 100vw;
+        border-bottom: solid 3px black;
+    }
+    
+    & td {
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    & a {
+        padding-right: 5px;
+        text-decoration: none;
+    }
+}
+
+#form-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff000055;
+    border: 3px solid #8c8273;
+    border-radius: 20px;
+    height: 500px;
+    text-align: left;
+    box-shadow: 23px 19px 74px -18px #8c8273;
+    width: 600px;
+    margin: 50px auto;
+
+    & label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffcbcb;
+    }
+
+    & input {
+        width: 430px;
+        height: 20px;
+        margin-top: 5px;
+        padding-left: 5px;
+        border: 2px solid black;
+    }
+
+    & input:focus {
+        outline: 2px solid #8c8273;
+        border: none;
+    }
+
+    & h3 {
+        color: white;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    & button {
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 430px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    & button:hover {
+        color: #fff;
+        background-color: #8c8273;
+        border: 2px solid black;
+    }
+
+    & button:active {
+        background-color: green;
+    }    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-login {
+    margin-bottom: 5px;
+}

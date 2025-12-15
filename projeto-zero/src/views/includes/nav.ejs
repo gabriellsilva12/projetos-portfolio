@@ -1,0 +1,17 @@
+<nav class="navbar">
+  
+  <% if(user) {%>
+    <a class="left" href="/agenda">Contact book</a>
+    <% } else {%>
+      <a class="left" href="/login">Contact book</a>
+  <% }%>
+  <div class="right">
+    <% if(!user) {%>
+        <a href="/contact">Create contact</a>
+        <a href="/login">Enter</a>
+      <% } else {;%>
+          <a href="/contact">Create contact</a>
+          <a href="/output">Exit</a>
+    <% };%>
+  </div>
+</nav>
